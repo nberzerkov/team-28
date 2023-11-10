@@ -20,7 +20,7 @@ Vanilla JS, SCSS, Parcel
 
 [Скачать ZIP архив с проектом (прямая ссылка)](https://github.com/ena0berzerk/team-28/archive/refs/heads/main.zip)
 
-Клонировать репо через SSH:
+Клонировать через SSH:
 
 ```bash
 git clone git@github.com:ena0berzerk/team-28.git
