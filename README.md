@@ -31,13 +31,13 @@ git clone https://github.com/ena0berzerk/team-28.git
 ## Как развернуть проект локально
 
 ```bash
- npm init
+npm init
 ```
 
 Как всё скачается, то:
 
 ```bash
- npm run start
+npm run start
 ```
 
 ## Деплой
