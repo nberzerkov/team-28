@@ -35,7 +35,7 @@ git clone https://github.com/ena0berzerk/team-28.git
 ## Как развернуть проект локально
 
 ```bash
-npm init
+npm init -y
 ```
 
 Как всё скачается, то:
