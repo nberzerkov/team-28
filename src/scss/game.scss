@@ -12,11 +12,11 @@
 }
 
 .game__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0 auto;
-  gap: 20px;
-  background-color: #E7D6B4;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin: 0 auto;
+   // width: fit-content;
+   gap: 20px;
 }
 
 .game__card {
@@ -25,12 +25,7 @@
    min-height: 200px;
    padding: 30px;
    box-sizing: border-box;
-   background-color: #C99D8E;
-  border: 2px solid #562F23;
-}
-
-.game__face-down {
-  background: linear-gradient(180deg, #F3B8B2 20.31%, rgba(255, 104, 149, 0.47) 61.98%, rgba(210, 127, 207, 0.47) 82.81%);
+   background-color: antiquewhite;
 
    cursor: pointer;
    transform-style: preserve-3d;
@@ -43,6 +38,7 @@
 }
 
 .card__face {
+   color: tomato;
    text-align: center;
    font-weight: bold;
    backface-visibility: hidden;
@@ -55,7 +51,7 @@
    background-repeat: no-repeat;
    background-size: contain;
 
-   // transform: rotateY(180deg);
+   transform: rotateY(180deg);
 }
 
 .card1 {
