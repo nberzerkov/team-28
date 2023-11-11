@@ -10,3 +10,13 @@ if (process.env.NODE_ENV !== 'production') {
 
 flipCard();
 shuffleCards();
+
+let countValue;
+
+function countMove() {
+   const count = document.getElementById('count');
+   if (count) {
+      countValue = parseInt(count.innerHTML);
+      countValue++;
+   }
+}

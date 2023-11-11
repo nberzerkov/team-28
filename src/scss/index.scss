@@ -14,11 +14,13 @@ body {
   position: relative;
   min-height: 100vh;
   color: white;
-  background-color: rgb(104, 120, 223);
+  background-color: #E6B479;
 }
 
 main {
   flex-grow: 1;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .heading {
