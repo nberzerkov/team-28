@@ -1,6 +1,5 @@
-import countMoves from './countMoves';
-
 import checkForMatch from './isMatchesCards';
+import countMoves from './countMoves';
 
 const gameCards = document.querySelectorAll('.game__card');
 
@@ -18,10 +17,9 @@ export function flipCards() {
 
    secondSelectedCard = this;
    isCardFlipped = false;
-   console.log(firstSelectedCard);
-   console.log(secondSelectedCard);
 
    checkForMatch();
+   countMoves();
 }
 
 export default function flipCard() {

@@ -1,4 +1,4 @@
-import { firstSelectedCard, secondSelectedCard } from './flip-card';
+import { firstSelectedCard, secondSelectedCard } from './flipCard';
 
 export default function checkForMatch() {
    if (firstSelectedCard.getAttribute('data-id') === secondSelectedCard.getAttribute('data-id')) {
