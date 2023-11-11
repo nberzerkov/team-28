@@ -1,0 +1,97 @@
+.game {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.game__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  // width: fit-content;
+  gap: 20px;
+}
+
+.game__card {
+  width: 100%;
+  height: 200px;
+  min-height: 200px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+}
+
+.game__img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;  
+}
+
+#card1 {
+  .game__img {
+    background-image: url(../img/aunt.svg);
+  }
+}
+
+#card2 {
+  .game__img {
+    background-image: url(../img/family-car.svg);
+  }
+}
+
+#card3 {
+  .game__img {
+    background-image: url(../img/big-family.svg);
+  }
+}
+
+#card4 {
+  .game__img {
+    background-image: url(../img/couple-old.svg);
+  }
+}
+
+#card5 {
+  .game__img {
+    background-image: url(../img/couple.svg);
+  }
+}
+
+#card6 {
+  .game__img {
+    background-image: url(../img/drawing.svg);
+  }
+}
+#card7 {
+  .game__img {
+    background-image: url(../img/family-3.svg);
+  }
+}
+
+#card8 {
+  .game__img {
+    background-image: url(../img/family-4.svg);
+  }
+}
+
+// .toggle-card {
+//   animation: toggleCard 0.3s linear;
+// }
+
+// @keyframes toggleCard {
+//   from {
+//     transform: rotateY('0');
+//   }
+
+//   to {
+//     transform: rotateY('180deg');
+//   }
+// }
