@@ -1,7 +1,6 @@
 .game {
   padding: 20px;
   margin: 0 auto;
-  max-width: 1440px;
 }
 
 .game__header {
@@ -123,12 +122,12 @@
 }
 
 
-@media (min-width: 1228px) {
-  .game__grid-wrapper {
-    padding: 60px;
+@media (min-width: 768px) {
+  .game {
+    width: 50%;
   }
 
-  .game__card {
-    min-height: 160px;
+  .game__grid-wrapper {
+    padding: 60px;
   }
 }
