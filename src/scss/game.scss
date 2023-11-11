@@ -54,6 +54,10 @@
    transform: rotateY(180deg);
 }
 
+.flip__card {
+   transform: rotateY(0deg);
+}
+
 .card1 {
    .game__img {
       background-image: url(../img/aunt.svg);
