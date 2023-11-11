@@ -1,3 +1,5 @@
+import countMoves from './countMoves';
+
 import checkForMatch from './isMatchesCards';
 
 const gameCards = document.querySelectorAll('.game__card');
