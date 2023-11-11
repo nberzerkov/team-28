@@ -8,7 +8,5 @@ export default function countMoves() {
       count.innerHTML = countValue;
     }
     console.log(countValue); 
-  } else {
-    console.log('Count element not found');
-  }
+  } 
 }
