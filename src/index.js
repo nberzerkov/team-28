@@ -10,6 +10,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 flipCard();
-// shuffleCards();
+shuffleCards();
 
 

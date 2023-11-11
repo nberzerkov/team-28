@@ -18,8 +18,8 @@ body {
 }
 
 main {
+  width: 100%;
   flex-grow: 1;
-  width: 75%;
   margin: 0 auto;
 }
 
@@ -31,4 +31,10 @@ main {
 
 footer {
   flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 75%;
+  }
 }

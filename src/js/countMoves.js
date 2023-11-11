@@ -1,10 +1,14 @@
-let countValue;
+let countValue = 0;
 
-export default function countMove() {
-   const count = document.getElementById('count');
-   if (count) {
-      countValue = parseInt(count.innerHTML);
-      countValue++;
-      console.log(countValue)
-   }
+export default function countMoves() {
+  const count = document.getElementById('count');
+  if (count) {
+    if (countValue < 8) {
+      countValue++; 
+      count.innerHTML = countValue;
+    }
+    console.log(countValue); 
+  } else {
+    console.log('Count element not found');
+  }
 }
