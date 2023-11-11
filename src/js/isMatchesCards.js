@@ -1,8 +1,8 @@
 import { firstSelectedCard, secondSelectedCard } from './flip-card';
-import freezeCards from './freezeCards';
 
 export default function checkForMatch() {
    if (firstSelectedCard.getAttribute('data-id') === secondSelectedCard.getAttribute('data-id')) {
+      // здесь надо написать функционал чтобы нельзя было нажать на фриз карточку
       console.log('freeze cards');
       return;
    }
