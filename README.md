@@ -34,6 +34,8 @@ git clone https://github.com/ena0berzerk/team-28.git
 
 ## Как развернуть проект локально
 
+ В терминале:
+
 ```bash
 npm install
 ```
