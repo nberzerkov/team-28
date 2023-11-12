@@ -583,61 +583,16 @@ var _shuffleCards = require("./js/shuffleCards");
 var _shuffleCardsDefault = parcelHelpers.interopDefault(_shuffleCards);
 var _restart = require("./js/restart");
 var _restartDefault = parcelHelpers.interopDefault(_restart);
+var _shareSocials = require("./js/shareSocials");
+var _shareSocialsDefault = parcelHelpers.interopDefault(_shareSocials);
 "use strict";
 console.log("Development mode");
 (0, _restartDefault.default)();
 (0, _flipCardDefault.default)();
 (0, _shuffleCardsDefault.default)();
+(0, _shareSocialsDefault.default)();
 
-},{"normalize.css":"eLmrl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./js/shuffleCards":"6FCvJ","./js/flipCard":"lpNrT","./js/restart":"8AXNe"}],"eLmrl":[function() {},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"6FCvJ":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>shuffleCards);
-function shuffleCards() {
-    const gameBoard = document.querySelector(".game__grid");
-    const cards = [
-        ...gameBoard.children
-    ];
-    cards.forEach((card)=>card.remove());
-    const randomCards = cards.map((child)=>({
-            child,
-            random: Math.random()
-        }));
-    randomCards.sort((a, b)=>b.random - a.random);
-    randomCards.forEach((randomObj)=>gameBoard.appendChild(randomObj.child));
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lpNrT":[function(require,module,exports) {
+},{"normalize.css":"eLmrl","./js/flipCard":"lpNrT","./js/shuffleCards":"6FCvJ","./js/restart":"8AXNe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./js/shareSocials":"7gMJY"}],"eLmrl":[function() {},{}],"lpNrT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "firstSelectedCard", ()=>firstSelectedCard);
@@ -670,7 +625,7 @@ function flipCard() {
     });
 }
 
-},{"./isMatchesCards":"2aA3r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./countMoves":"kxwJs"}],"2aA3r":[function(require,module,exports) {
+},{"./isMatchesCards":"2aA3r","./countMoves":"kxwJs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2aA3r":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "findedPairs", ()=>findedPairs);
@@ -698,7 +653,7 @@ function checkForMatch() {
     }, "800");
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./flipCard":"lpNrT","./findedAllPairs":"lJDPq","./disableClickListener":"3jOon"}],"lJDPq":[function(require,module,exports) {
+},{"./flipCard":"lpNrT","./findedAllPairs":"lJDPq","./disableClickListener":"3jOon","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lJDPq":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>getFindedPairs);
@@ -709,7 +664,7 @@ function getFindedPairs() {
     if ((0, _isMatchesCards.findedPairs).length === 8) (0, _openFinishModalDefault.default)();
 }
 
-},{"./isMatchesCards":"2aA3r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./openFinishModal":"6EB6D"}],"6EB6D":[function(require,module,exports) {
+},{"./isMatchesCards":"2aA3r","./openFinishModal":"6EB6D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6EB6D":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>openFinishModal);
@@ -718,7 +673,37 @@ function openFinishModal() {
     modalWindow.classList.add("modal--open");
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3jOon":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"3jOon":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>disableClickListener);
@@ -731,6 +716,7 @@ function disableClickListener() {
 },{"./flipCard":"lpNrT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kxwJs":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "countValue", ()=>countValue);
 parcelHelpers.export(exports, "default", ()=>countMoves);
 let countValue = 0;
 function countMoves() {
@@ -740,6 +726,24 @@ function countMoves() {
         count.textContent = countValue;
         console.log(countValue);
     }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6FCvJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>shuffleCards);
+function shuffleCards() {
+    const gameBoard = document.querySelector(".game__grid");
+    const cards = [
+        ...gameBoard.children
+    ];
+    cards.forEach((card)=>card.remove());
+    const randomCards = cards.map((child)=>({
+            child,
+            random: Math.random()
+        }));
+    randomCards.sort((a, b)=>b.random - a.random);
+    randomCards.forEach((randomObj)=>gameBoard.appendChild(randomObj.child));
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8AXNe":[function(require,module,exports) {
@@ -757,6 +761,24 @@ function restart() {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire6885")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7gMJY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>shareResults);
+var _countMoves = require("./countMoves");
+function shareResults() {
+    let baseUrl = "https://ena0berzerk.github.io/team-28/";
+    let shareUrl = `${baseUrl}?moves=${(0, _countMoves.countValue)}`;
+    const shareLinks = document.querySelectorAll(".share");
+    if (shareLinks) shareLinks.forEach((link)=>{
+        link.addEventListener("click", ()=>{
+            console.log(link);
+            link.setAttribute("data-title", `\u{42F} \u{441}\u{43F}\u{440}\u{430}\u{432}\u{438}\u{43B}_\u{430}\u{441}\u{44C} \u{437}\u{430} ${(0, _countMoves.countValue)} \u{445}\u{43E}\u{434}\u{43E}\u{432}!`);
+            link.setAttribute("data-url", shareUrl);
+        });
+    });
+}
+
+},{"./countMoves":"kxwJs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire6885")
 
 //# sourceMappingURL=index.975ef6c8.js.map

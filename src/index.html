@@ -6,6 +6,15 @@
       <title>Team 28</title>
       <link rel="stylesheet" href="./scss/index.scss" />
       <script type="module" src="index.js" defer></script>
+      <link
+  href="https://cdn.jsdelivr.net/npm/shareon@2/dist/shareon.min.css"
+  rel="stylesheet"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/shareon@2/dist/shareon.iife.js"
+  defer
+  init
+></script>
    </head>
    <body>
       <main>
@@ -95,7 +104,13 @@
             <button data-id="restart" type="button" class="button button--restart"></button>
           </div>
           <h2 class="modal__heading">Поздравляем с прохождением игры!</h2>
-          <div class="modal__bottom"></div>
+          <div class="modal__bottom">
+            <div class="shareon">
+              <a data-id="social" data-title="" class="share telegram"></a>
+              <a data-id="social" data-title="" class="share twitter"></a>
+              <a data-id="social" data-title="" class="share vkontakte"></a>
+            </div>
+          </div>
       </div>
     </div>
    </body>
