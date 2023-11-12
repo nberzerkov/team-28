@@ -3,7 +3,7 @@
    "version": "1.0.0",
    "description": "",
    "scripts": {
-      "start": "parcel src/index.html -p 3000 --open",
+      "start": "parcel src/index.html -p 1234 --open",
       "build": "parcel build src/index.html"
    },
    "keywords": [],
