@@ -14,6 +14,15 @@ Vanilla JS, SCSS, Parcel
 
 Игра с карточками, которые открываются попарно, и задача - открыть все карточки за наименьшее количество ходов.
 
+Реализованные фичи:
+
+- вывод поля с рандомно расположенными карточками (каждый раунд - новая позиция карточек);
+- возможность открывать карточки;
+- закрытие непарных карточек, парные - остаются открытыми;
+- подсчет количества ходов;
+- экран поздравления с окончанием игры;
+- возможность рестарта в процессе игры и после её окончания;
+
 ## Установка
 
 Несколько вариантов:
@@ -48,4 +57,6 @@ npm run start
 
 ## Материалы дизайнера
 
-Тут какие-то материалы будут, а если не будет, то удалим этот абзац
+- дизайн игры - https://www.figma.com/file/NAfCS0PxEmYTBhicMW7kZt/The-game-itself?type=design&node-id=0%3A1&mode=design&t=D3vU6uyy7cpQSGoM-1 
+- окно окончания игры - https://www.figma.com/file/GPZLGQnGgLW4ENVYbZVnkW/Victory?type=design&node-id=0%3A1&mode=design&t=txEnnrP8zoUB4uPd-1
+- окно game over (не понадобилось) - https://www.figma.com/file/jv3nt6e4nHFzhPSSpdrv5Z/Game-over?type=design&node-id=0%3A1&mode=design&t=JZ0LmAOi1WFwzXRU-1
