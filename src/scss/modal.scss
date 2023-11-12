@@ -5,8 +5,11 @@
    left: 0;
    width: 100vw;
    height: 100vh;
+   align-self: end;
    z-index: 99;
    backdrop-filter: blur(5px);
+   transform: scale(0.8);
+   transition: all ease 400ms;
 
    &--open {
       display: block;
