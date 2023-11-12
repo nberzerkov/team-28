@@ -1,72 +1,77 @@
 .game {
-  padding: 20px;
-  margin: 0 auto;
+   padding: 20px;
+   margin: 0 auto;
 }
 
 .game__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px;
 }
 
 .game__grid-wrapper {
-  padding: 20px;
-  background-color: #E7D6B4;
-  border-radius: 20px;
+   padding: 20px;
+   background-color: #e7d6b4;
+   border-radius: 20px;
 }
 
 .game__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0 auto;
-  gap: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin: 0 auto;
+   gap: 20px;
 }
 
 .game__card {
-  width: 100%;
-  min-height: 50px;
-  aspect-ratio: 1 / 1;
-  border: 2px solid #562F23;
-  transform-style: preserve-3d;
-  transform-origin: center right;
-  transition: transform 1s;
+   width: 100%;
+   min-height: 50px;
+   aspect-ratio: 1 / 1;
+   border: 2px solid #562f23;
+   transform-style: preserve-3d;
+   transform-origin: center right;
+   transition: transform 1s;
 }
 
 .is-flipped {
-  transform: translateX(-100%) rotateY(-180deg);
-  // background: #C99D8E;
+   transform: translateX(-100%) rotateY(-180deg);
+   // background: #C99D8E;
 }
 
 .card__face {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  min-height: 50px;
-  cursor: pointer;
-  backface-visibility: hidden;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   min-height: 50px;
+   cursor: pointer;
+   backface-visibility: hidden;
 
-  &.back {
-    background: linear-gradient(180deg, #F3B8B2 20.31%, rgba(255, 104, 149, 0.47) 61.98%, rgba(210, 127, 207, 0.47) 82.81%);
-  }
+   &.back {
+      background: linear-gradient(
+         180deg,
+         #f3b8b2 20.31%,
+         rgba(255, 104, 149, 0.47) 61.98%,
+         rgba(210, 127, 207, 0.47) 82.81%
+      );
+   }
 
-  &.front {
-    background: #C99D8E;
-  }
+   &.front {
+      background: #c99d8e;
+   }
 }
 
 .game__img {
-  padding: 20px;
-  background-color: #C99D8E;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  box-sizing: border-box;
+   padding: 20px;
+   background-color: #c99d8e;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 80%;
+   box-sizing: border-box;
 
-  transform: rotateY(180deg);
+   transform: rotateY(180deg);
 }
 
 .flip__card {
@@ -74,60 +79,59 @@
 }
 
 .card1 {
-  .game__img {
-    background-image: url(../img/aunt.svg);
-  }
+   .game__img {
+      background-image: url(../img/aunt.svg);
+   }
 }
 
 .card2 {
-  .game__img {
-    background-image: url(../img/family-car.svg);
-  }
+   .game__img {
+      background-image: url(../img/family-car.svg);
+   }
 }
 
 .card3 {
-  .game__img {
-    background-image: url(../img/big-family.svg);
-  }
+   .game__img {
+      background-image: url(../img/big-family.svg);
+   }
 }
 
 .card4 {
-  .game__img {
-    background-image: url(../img/couple-old.svg);
-  }
+   .game__img {
+      background-image: url(../img/couple-old.svg);
+   }
 }
 
 .card5 {
-  .game__img {
-    background-image: url(../img/couple.svg);
-  }
+   .game__img {
+      background-image: url(../img/couple.svg);
+   }
 }
 
 .card6 {
-  .game__img {
-    background-image: url(../img/drawing.svg);
-  }
+   .game__img {
+      background-image: url(../img/drawing.svg);
+   }
 }
 
 .card7 {
-  .game__img {
-    background-image: url(../img/family-3.svg);
-  }
+   .game__img {
+      background-image: url(../img/family-3.svg);
+   }
 }
 
 .card8 {
-  .game__img {
-    background-image: url(../img/family-4.svg);
-  }
+   .game__img {
+      background-image: url(../img/family-4.svg);
+   }
 }
 
-
 @media (min-width: 768px) {
-  .game {
-    width: 50%;
-  }
+   .game {
+      width: 50%;
+   }
 
-  .game__grid-wrapper {
-    padding: 60px;
-  }
+   .game__grid-wrapper {
+      padding: 60px;
+   }
 }
