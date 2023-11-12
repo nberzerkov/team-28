@@ -28,7 +28,7 @@
 
 .modal__heading {
   padding: 10px;
-  color: #EA348B;
+  color: #c66853;
   -webkit-text-stroke-color: #610933;
   text-align: center;
   font-family: Kiwi Maru, Helvetica, sans-serif;
@@ -84,27 +84,6 @@
     transform: rotate(180deg);
     right: 0;
   }
-}
-
-.modal__close {
-  width: 50px;
-  border: none;
-  height: 50px;
-  background-color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url('../img/close.png');
-  margin-right: 20px;
-}
-
-.modal__restart {
-  width: 50px;
-  border: none;
-  height: 50px;
-  background-color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url('../img/restart.png');
 }
 
 @media (min-width: 768px) {

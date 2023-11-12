@@ -1,0 +1,14 @@
+
+.button  {
+  width: 50px;
+  border: none;
+  height: 50px;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &--restart {
+    background-image: url('../img/restart.png');
+  }
+}
