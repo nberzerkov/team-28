@@ -1,7 +1,7 @@
 $tomato-color: tomato;
 
-@import url("game.scss");
-@import url("modal.scss");
+@import url('game.scss');
+@import url('modal.scss');
 @import url('button.scss');
 
 * {
@@ -26,6 +26,7 @@ main {
 .heading {
    width: fit-content;
    margin: 0 auto;
+   padding: 20px;
 }
 
 footer {
