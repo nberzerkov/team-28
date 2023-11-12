@@ -1,13 +1,13 @@
 import flipCard, { flipCards, firstSelectedCard, secondSelectedCard } from './flipCard';
 import getFindedPairs from './findedAllPairs';
+import disableClickListener from './disableClickListener';
 
 export let findedPairs = [];
 
 export default function checkForMatch() {
    if (firstSelectedCard.getAttribute('data-id') === secondSelectedCard.getAttribute('data-id')) {
       findedPairs.push([firstSelectedCard, secondSelectedCard]);
-      firstSelectedCard.setAttribute('style', 'pointer-events: none');
-      secondSelectedCard.setAttribute('style', 'pointer-events: none');
+      disableClickListener();
       getFindedPairs();
       return;
    }
