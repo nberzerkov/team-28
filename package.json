@@ -2,15 +2,19 @@
    "name": "team28",
    "version": "1.0.0",
    "description": "",
+   "homepage": "https://github.com/ena0berzerk/team-28",
    "scripts": {
       "start": "parcel src/index.html -p 1234 --open",
-      "build": "parcel build src/index.html"
+      "build": "parcel build src/index.html --public-url /team-28/",
+      "deploy": "gh-pages -d dist",
+      "predeploy": "npm run build"
    },
    "keywords": [],
    "author": "",
    "license": "ISC",
    "devDependencies": {
       "@parcel/transformer-sass": "^2.10.2",
+      "gh-pages": "^6.0.0",
       "parcel": "^2.10.2"
    },
    "dependencies": {
