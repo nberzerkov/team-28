@@ -1,29 +1,29 @@
 .modal {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 99;
-  backdrop-filter: blur(5px);
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: 99;
+   backdrop-filter: blur(5px);
 
-  &--open {
-    display: block;
-  }
+   &--open {
+      display: block;
+   }
 }
 
 .modal__content {
-  position: absolute;
-  z-index: 1000;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  width: 80%;
-  padding: 20px;
-  background-color: #E7D6B4;
-  text-align: center;
-  border-radius: 20px;
+   position: absolute;
+   z-index: 1000;
+   top: 75%;
+   left: 50%;
+   transform: translate(-50%, -100%);
+   width: 80%;
+   padding: 20px;
+   background-color: #e7d6b4;
+   text-align: center;
+   border-radius: 20px;
 }
 
 .modal__heading {
@@ -37,62 +37,64 @@
 }
 
 .modal__top {
-  position: relative;
+   position: relative;
 
-  &::before, &::after {
-    content: '';
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 0;
-    background-image: url('../img/decor.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+   &::before,
+   &::after {
+      content: '';
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      background-image: url('../img/decor.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
 
-  &::before {
-    left: 0;
-  }
+   &::before {
+      left: 0;
+   }
 
-  &::after {
-    transform: rotate(90deg);
-    right: 0;
-  }
+   &::after {
+      transform: rotate(90deg);
+      right: 0;
+   }
 }
 
 .modal__bottom {
-  position: relative;
-  min-height: 80px;
+   position: relative;
+   min-height: 80px;
 
-  &::before, &::after {
-    content: '';
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 0;
-    background-image: url('../img/decor.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+   &::before,
+   &::after {
+      content: '';
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      background-image: url('../img/decor.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
 
-  &::before {
-    transform: rotate(270deg);
-    left: 0;
-  }
+   &::before {
+      transform: rotate(270deg);
+      left: 0;
+   }
 
-  &::after {
-    transform: rotate(180deg);
-    right: 0;
-  }
+   &::after {
+      transform: rotate(180deg);
+      right: 0;
+   }
 }
 
 @media (min-width: 768px) {
-  .modal__content {
-    width: 600px;
-    padding: 30px;
-  }
+   .modal__content {
+      width: 600px;
+      padding: 30px;
+   }
 
-  .modal__heading {
-    font-size: 60px;
-  }
+   .modal__heading {
+      font-size: 60px;
+   }
 }

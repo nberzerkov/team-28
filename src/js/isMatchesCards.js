@@ -1,12 +1,14 @@
-import { firstSelectedCard, secondSelectedCard } from './flipCard';
+import flipCard, { flipCards, firstSelectedCard, secondSelectedCard } from './flipCard';
+import getFindedPairs from './findedAllPairs';
 
-export let countFreeze = 0;
+export let findedPairs = [];
 
 export default function checkForMatch() {
    if (firstSelectedCard.getAttribute('data-id') === secondSelectedCard.getAttribute('data-id')) {
-      // здесь надо написать функционал чтобы нельзя было нажать на фриз карточку
-      ++countFreeze;
-      console.log(countFreeze);
+      findedPairs.push([firstSelectedCard, secondSelectedCard]);
+      firstSelectedCard.setAttribute('style', 'pointer-events: none');
+      secondSelectedCard.setAttribute('style', 'pointer-events: none');
+      getFindedPairs();
       return;
    }
 
